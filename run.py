@@ -1,15 +1,15 @@
-import gspread
-from google.oauth2.service account import Credentials
+import string
+alphabet = list(string.ascii_lowercase)
+print(alphabet)
 
-SCOPE = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive.file",
-    "https://www.googleapis.com/auth/drive"
-    ]
+table = [['Letter', 'Number'],
+         ['A', '1'],
+         ['B', '2'],
+         ['C', '3'],
+         ['D', '4'],
+         ['E', '5'],
+         ['F', '6'],
+         ['G', '7'],
+         ['B', '2'],
+         ['B', '2']]
 
- CREDS = Credentials.from_service_account_file('creds.json')   
- SCOPED_CREDS = CREDS.with_scope(SCOPE)
- GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
- SHEET = GSPREAD_CLIENT.open('numerology')
-
- 
