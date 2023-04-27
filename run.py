@@ -1,4 +1,18 @@
-import sys
+import time
+
+def animate_intro():
+    print("Bem-vindo ao programa de numerologia!")
+    time.sleep(1)
+    print("Este programa irá calcular o valor numerológico do seu nome.")
+    time.sleep(1)
+    print("Preparando o programa...")
+    time.sleep(1)
+    print("...")
+    time.sleep(1)
+    print("...")
+    time.sleep(1)
+    print("...")
+    time.sleep(1)
 
 def numerology_value(letter):
     # Define a dictionary to map each letter to its numerology value
@@ -27,19 +41,34 @@ def calculate_numerology_value(name):
     return numerology_sum
 
 def numerology_cli():
-    # Check if the user provided a name as a command-line argument
-    if len(sys.argv) > 1:
-        name = " ".join(sys.argv[1:])
-    else:
-        # Prompt the user to enter their name
-        name = input("Enter your name: ")
-    
-    # Calculate the numerology value of the name
-    numerology_value = calculate_numerology_value(name)
-    
-    # Print the result
-    print(f"The numerology value of your name {name} is {numerology_value}.")
+    while True:
+        # Display the main menu
+        print("\n=== MENU ===")
+        print("1. Calcular valor numerológico do nome")
+        print("2. Sair do programa")
+        
+        # Prompt the user to enter a choice
+        choice = input("Escolha uma opção: ")
+        
+        # Process the user's choice
+        if choice == "1":
+            # Ask the user for their name
+            name = input("Digite seu nome: ")
+            
+            # Calculate the numerology value of the name
+            numerology_value = calculate_numerology_value(name)
+            
+            # Print the result
+            print(f"O valor numerológico do seu nome '{name}' é {numerology_value}.")
+        elif choice == "2":
+            # Exit the program
+            print("Obrigado por usar o programa de numerologia!")
+            break
+        else:
+            # Invalid choice
+            print("Opção inválida. Por favor, escolha novamente.")
 
 # Run the command-line interface
 if __name__ == '__main__':
+    animate_intro()
     numerology_cli()
