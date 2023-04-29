@@ -59,7 +59,7 @@ def numerology_cli():
             numerology_value = calculate_numerology_value(name)
             
             # Print the result
-            print(f"The numerology value of your name '{name}' is {numerology_value}.")
+            print("The numerology value of your name '{}' is {}.".format(name, numerology_value))
         elif choice == "2":
             # Exit the program
             print("Thank you for using the numerology program!")
