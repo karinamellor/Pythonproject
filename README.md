@@ -1,6 +1,6 @@
-## Numerology
+### Numerology
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+- Deployment [Numerology](https://numerology.herokuapp.com).
 
 ## User Experience (UX)
 
@@ -10,11 +10,37 @@ calculate the final number by adding all the numbers of each letter.
 This app is for users that are curious about numerology or already know the principles of numerology and
 would like to calculate their number without having to calculate it themselves.
 
+![Captura de tela 2023-05-01 031339](https://user-images.githubusercontent.com/74268139/235392233-75945269-696a-409f-b19a-a8399426fb48.jpg)
+
+![Captura de tela 2023-05-01 031450](https://user-images.githubusercontent.com/74268139/235392447-8fc3bcd1-d262-497a-b465-919de63ae93c.jpg)
+
+
+
 ## User Expectation
 
 - As a user, I expect to find an app that is easy to navigate and intuitive.
 - As a user, I expect the app to be accurate when calculating my number from my name.
 
+## Design
+
+- Colour
+
+The main colour is the basic of the command-line. The background is black and
+the letters are white.
+
+- Animation
+There is a menu with a basic animation.
+
+## Features
+ - Responsive on all device sizes
+ - Interactive elements
+
+## Technologies Used
+
+- Python
+- CSS3
+- Javascript
+- Json
 
 
 ## Creating the Heroku app
