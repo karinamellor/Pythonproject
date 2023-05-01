@@ -1,4 +1,4 @@
-### Numerology
+## Numerology
 
 - Deployment [Numerology](https://numerology.herokuapp.com).
 
@@ -42,6 +42,30 @@ There is a menu with a basic animation.
 - Javascript
 - Json
 
+## Frameworks, Libraries & Programs Used
+1. [Python Org](https://www.python.org/downloads).
+ - I need to download in my computer and run the Command-line.
+
+2. [Install Numerology](https://pypi.org/project/numerology).
+- A simple multilanguage numerology
+
+3. [Heroku](https://herokuapp.com)
+-  Heroku is a container-based cloud Platform as a Service (PaaS). Developers use Heroku to deploy, manage, and scale modern app
+
+4. GitHub:
+- GitHub is used to store the projects code after being pushed from Git
+
+5. Gitpod
+- Gitpod is an open source developer platform automating the provisioning of ready-to-code developer environments.
+
+## Testing
+I found an error when printing the result in line 62, because I was calling the wrong function. After that, I
+found an error in line 46 because I didn’t close the bracket in the menu.
+- [Extends Class](https://extendsclass.com/python-tester.html).
+- [Online Python](https://www.online-python.com).
+
+## Deployment
+The project was deployed in HerokuApp.
 
 ## Creating the Heroku app
 
@@ -60,5 +84,13 @@ Connect your GitHub repository and deploy as normal.
 
 The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+## Credits
+ 1. Code:
+ - [Python](https://pythonbasics.org).
+ - [Real Python](https://realpython.com).
+ - Code Institute
+ 
+ ## Acknowledgements
+- Slack Code Institute.
+- Tutor support at Code Institute for their support.
+- Code Institute
