@@ -1,7 +1,11 @@
 import time
 
 def animate_intro():
-    print("Welcome to the numerology program!")
+    print("======================================")
+    print("|                                    |")
+    print("|      Welcome to the Numerology      |")
+    print("|                                    |")
+    print("======================================")
     time.sleep(1)
     print("This program will calculate the numerology value of your name.")
     time.sleep(1)
@@ -32,13 +36,22 @@ def numerology_value(letter):
         return 0
 
 def calculate_numerology_value(name):
-    # Calculate the numerology value for the entire name
+     
+   # Calculate the numerology value of a given name.
     numerology_sum = 0
     for letter in name:
         letter_value = numerology_value(letter)
         numerology_sum += letter_value
     
+    # Sum the digits of the result until a single digit is obtained
+    while numerology_sum > 9:
+        digit_sum = 0
+        for digit in str(numerology_sum):
+            digit_sum += int(digit)
+        numerology_sum = digit_sum
+    
     return numerology_sum
+
 
 def numerology_cli():
     while True:
@@ -72,3 +85,5 @@ def numerology_cli():
 if __name__ == '__main__':
     animate_intro()
     numerology_cli()
+
+       
