@@ -1,14 +1,21 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-Welcome Karina,
+## Numerology
 
 This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
 
-## Reminders
+## User Experience (UX)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+On this app, the user can insert their name and the system will calculate and reveal the number that belongs
+to the user according to numerology. For each letter there is a number from 1 to 9, so the system will
+calculate the final number by adding all the numbers of each letter.
+This app is for users that are curious about numerology or already know the principles of numerology and
+would like to calculate their number without having to calculate it themselves.
+
+## User Expectation
+
+- As a user, I expect to find an app that is easy to navigate and intuitive.
+- As a user, I expect the app to be accurate when calculating my number from my name.
+
+
 
 ## Creating the Heroku app
 
